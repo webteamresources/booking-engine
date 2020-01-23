@@ -1,0 +1,580 @@
+
+    <div class="search-sec flights-wrp main-bannr">
+        <div class="container">
+            <div class="banner-cont-wrap">
+                <h1 class="banner-ttl">What’s your travel story?</h1>
+                <div class="sub-ttl">Customise your travel experience and talk more about it</div>
+                <div class="form-sec">
+                    <div class="widget-wrap">
+                        <div class="chekbox-radio-group black-theme chk-bx-cont">
+                            <label class="radio-inline" *ngFor="let trip of tripType;">
+                                <input type="radio" value="{{trip}}" class="fl-one-way" name="flight-way" checked>{{trip}}</label>  
+                        </div>
+                        <ul class="widget-form-elements srch-oneway-return">
+                            <li class="custom-field frm-field">
+                                                      <a href="#" class="btn-swipe"><i class="fa-return-icon"></i></a>
+                                <div class="holder">
+                                    <label>From</label>
+                                    <i>City, Airport</i>
+                                </div>
+                                <input name="fromdestination">
+                                                        <div class="error-widget">
+                                                            <i class="fa-custom-error-icon"></i>
+                                                            <span class="err-txt">Please enter a valid origin city</span>
+                                                        </div>
+                                                      <div class="nearby-list">
+                                                          <div class="nearby-txt">Nearby Airports</div>
+                                                          <ul>
+                                                              <li><a href="#"><span>Chandigarh (Chandigarh Airport - IXC), India</span><span>43.3 km from Ambala</span></a></li>
+                                                              <li><a href="#"><span>Shimla (Shimla Airport - SLV), India</span><span>132.6 km from Ambala</span></a></li>
+                                                              <li><a href="#"><span>Ludhiana (Ludhiana Airport - LUH), India</span><span>97.7 km from Ambala</span></a></li>
+                                                          </ul>
+                                                      </div>
+                            </li>
+                            <li class="custom-field to-field">
+                                <div class="holder">
+                                    <label>To</label>
+                                    <i>City, Airport</i>
+                                </div>
+                                <input name="todestination">
+                            </li>
+                            <li class="custom-field depart-field depart-cal">
+                                <div class="holder">
+                                    <label>Departing</label>
+                                    <i>Date</i>
+                                </div>
+                                <div class="form-des-element">
+                                    <input size="16" type="text"><span class="cal-icon"></span>
+                                                        
+                                                        </div>
+                                    <div class="custom-calender multi form-des-details">
+                                    <div class="custom-multi-calendar">
+                                        <div class="head-tl">Select Departure Date</div>
+                                        <div class="dateFilter hasDatepicker" style="display: block;">
+
+                                            <div class="ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-datepicker-multi ui-datepicker-multi-2" style="display: block;">
+                                                <div class="ui-datepicker-group ui-datepicker-group-first">
+                                                    <div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-left"><a class="ui-datepicker-prev ui-corner-all" data-handler="prev" data-event="click" title="Prev"><span class="ui-icon ui-icon-circle-triangle-w">Prev</span></a>
+                                                        <div class="ui-datepicker-title"><span class="ui-datepicker-month">FEBRUARY</span>&nbsp;<span class="ui-datepicker-year">2017</span>
+                                                        </div>
+                                                    </div>
+                                                    <table class="ui-datepicker-calendar">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" class="ui-datepicker-week-end"><span title="Sunday">Su</span>
+                                                                </th>
+                                                                <th scope="col"><span title="Monday">Mo</span>
+                                                                </th>
+                                                                <th scope="col"><span title="Tuesday">Tu</span>
+                                                                </th>
+                                                                <th scope="col"><span title="Wednesday">We</span>
+                                                                </th>
+                                                                <th scope="col"><span title="Thursday">Th</span>
+                                                                </th>
+                                                                <th scope="col"><span title="Friday">Fr</span>
+                                                                </th>
+                                                                <th scope="col" class="ui-datepicker-week-end"><span title="Saturday">Sa</span>
+                                                                </th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class="ui-datepicker-unselectable ui-state-disabled">1</td>
+                                                                <td class="ui-datepicker-unselectable ui-state-disabled">2</td>
+                                                                <td class="ui-datepicker-unselectable ui-state-disabled">3</td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="ui-state-disabled">4</td>
+                                                                <td class="ui-state-disabled">5</td>
+                                                                <td class="ui-state-disabled">6</td>
+                                                                <td class="ui-state-disabled">7</td>
+                                                                <td class="ui-datepicker-today" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default ui-state-active" href="#">8</a><span class="calendarPrice">2,220</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">9</a><span class="calendarPrice">6,450</span>
+                                                                </td>
+                                                                <td data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">10</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">11</a><span class="calendarPrice">3,200</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">12</a><span class="calendarPrice">2,200</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">13</a><span class="calendarPrice">7,900</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">14</a><span class="calendarPrice">9,300</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">15</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">16</a><span class="calendarPrice">8,800</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">17</a><span class="calendarPrice">5,500</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">18</a><span class="calendarPrice">4,240</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">19</a><span class="calendarPrice">8,250</span>
+                                                                </td>
+                                                                <td class="ui-lowest-fares" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">20</a><span class="calendarPrice">2,200</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">21</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">22</a><span class="calendarPrice">4,250</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">23</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">24</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">25</a><span class="calendarPrice">3,100</span>
+                                                                </td>
+                                                                <td class="ui-state-holiday" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">26</a><span class="calendarPrice">6,500</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">27</a><span class="calendarPrice">9,100</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">28</a><span class="calendarPrice">6,500</span>
+                                                                </td>
+                                                                <td class="ui-state-holiday" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">29</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">30</a><span class="calendarPrice">6,500</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">31</a><span class="calendarPrice">5,800</span>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="ui-datepicker-group ui-datepicker-group-last">
+                                                    <div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-right"><a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a>
+                                                        <div class="ui-datepicker-title"><span class="ui-datepicker-month">MARCH</span>&nbsp;<span class="ui-datepicker-year">2017</span>
+                                                        </div>
+                                                    </div>
+                                                    <table class="ui-datepicker-calendar">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" class="ui-datepicker-week-end"><span title="Sunday">Su</span>
+                                                                </th>
+                                                                <th scope="col"><span title="Monday">Mo</span>
+                                                                </th>
+                                                                <th scope="col"><span title="Tuesday">Tu</span>
+                                                                </th>
+                                                                <th scope="col"><span title="Wednesday">We</span>
+                                                                </th>
+                                                                <th scope="col"><span title="Thursday">Th</span>
+                                                                </th>
+                                                                <th scope="col"><span title="Friday">Fr</span>
+                                                                </th>
+                                                                <th scope="col" class="ui-datepicker-week-end"><span title="Saturday">Sa</span>
+                                                                </th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class="ui-datepicker-unselectable ui-state-disabled">1</td>
+                                                                <td class="ui-datepicker-unselectable ui-state-disabled">2</td>
+                                                                <td class="ui-datepicker-unselectable ui-state-disabled">3</td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="ui-state-disabled">4</td>
+                                                                <td class="ui-state-disabled">5</td>
+                                                                <td class="ui-state-disabled">6</td>
+                                                                <td class="ui-state-disabled">7</td>
+                                                                <td data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">8</a><span class="calendarPrice">2,220</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">9</a><span class="calendarPrice">6,450</span>
+                                                                </td>
+                                                                <td data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">10</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">11</a><span class="calendarPrice">3,200</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">12</a><span class="calendarPrice">2,200</span>
+                                                                </td>
+                                                                <td class="ui-state-holiday" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">13</a><span class="calendarPrice">7,900</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">14</a><span class="calendarPrice">9,300</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">15</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">16</a><span class="calendarPrice">8,800</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">17</a><span class="calendarPrice">5,500</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">18</a><span class="calendarPrice">4,240</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">19</a><span class="calendarPrice">8,250</span>
+                                                                </td>
+                                                                <td class="ui-lowest-fares" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">20</a><span class="calendarPrice">2,200</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">21</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">22</a><span class="calendarPrice">4,250</span>
+                                                                </td>
+                                                                <td class="ui-state-holiday ui-state-holiday-tl" title="Ramzan Eid" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">23</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">24</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">25</a><span class="calendarPrice">3,100</span>
+                                                                </td>
+                                                                <td data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">26</a><span class="calendarPrice">6,500</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">27</a><span class="calendarPrice">9,100</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">28</a><span class="calendarPrice">6,500</span>
+                                                                </td>
+                                                                <td data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">29</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">30</a><span class="calendarPrice">6,500</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">31</a><span class="calendarPrice">5,800</span>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="date-legends">
+                                                    <div class="today-date">Today's Date</div>
+                                                    <div class="holiday">Holiday</div>
+                                                    <div class="lowest-fare">Lowest Fares</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="custom-field cf-return disabled">
+                                <div class="holder">
+                                    <label>Returning</label>
+                                    <i>Date</i>
+                                </div>
+                                <div class="form-des-element">
+                                    <input size="16" type="text" disabled><span class="cal-icon"></span>
+                                </div>
+                                <div class="custom-calender multi form-des-details">
+                                    <div class="custom-multi-calendar">
+                                        <div class="head-tl">Select Return Date</div>
+                                        <div class="dateFilter hasDatepicker" style="display: block;">
+
+                                            <div class="ui-datepicker-inline ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all ui-datepicker-multi ui-datepicker-multi-2" style="display: block;">
+                                                <div class="ui-datepicker-group ui-datepicker-group-first">
+                                                    <div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-left"><a class="ui-datepicker-prev ui-corner-all" data-handler="prev" data-event="click" title="Prev"><span class="ui-icon ui-icon-circle-triangle-w">Prev</span></a>
+                                                        <div class="ui-datepicker-title"><span class="ui-datepicker-month">FEBRUARY</span>&nbsp;<span class="ui-datepicker-year">2017</span>
+                                                        </div>
+                                                    </div>
+                                                    <table class="ui-datepicker-calendar">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" class="ui-datepicker-week-end"><span title="Sunday">Su</span>
+                                                                </th>
+                                                                <th scope="col"><span title="Monday">Mo</span>
+                                                                </th>
+                                                                <th scope="col"><span title="Tuesday">Tu</span>
+                                                                </th>
+                                                                <th scope="col"><span title="Wednesday">We</span>
+                                                                </th>
+                                                                <th scope="col"><span title="Thursday">Th</span>
+                                                                </th>
+                                                                <th scope="col"><span title="Friday">Fr</span>
+                                                                </th>
+                                                                <th scope="col" class="ui-datepicker-week-end"><span title="Saturday">Sa</span>
+                                                                </th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
+                                                                <td class="ui-datepicker-unselectable ui-state-disabled">1</td>
+                                                                <td class="ui-datepicker-unselectable ui-state-disabled">2</td>
+                                                                <td class="ui-datepicker-unselectable ui-state-disabled">3</td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="ui-state-disabled">4</td>
+                                                                <td class="ui-state-disabled">5</td>
+                                                                <td class="ui-state-disabled">6</td>
+                                                                <td class="ui-state-disabled">7</td>
+                                                                <td class="ui-datepicker-today" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default ui-state-active" href="#">8</a><span class="calendarPrice">2,220</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">9</a><span class="calendarPrice">6,450</span>
+                                                                </td>
+                                                                <td data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">10</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">11</a><span class="calendarPrice">3,200</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">12</a>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">13</a><span class="calendarPrice">7,900</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">14</a><span class="calendarPrice">9,300</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">15</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">16</a><span class="calendarPrice">8,800</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">17</a><span class="calendarPrice">5,500</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">18</a><span class="calendarPrice">4,240</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">19</a><span class="calendarPrice">8,250</span>
+                                                                </td>
+                                                                <td class="ui-lowest-fares" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">20</a><span class="calendarPrice">2,200</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">21</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">22</a><span class="calendarPrice">4,250</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">23</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">24</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">25</a><span class="calendarPrice">3,100</span>
+                                                                </td>
+                                                                <td class="ui-state-holiday" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">26</a>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">27</a><span class="calendarPrice">9,100</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">28</a><span class="calendarPrice">6,500</span>
+                                                                </td>
+                                                                <td class="ui-lowest-fares" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">29</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">30</a>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="7" data-year="2017"><a class="ui-state-default" href="#">31</a><span class="calendarPrice">5,800</span>
+                                                                </td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="ui-datepicker-group ui-datepicker-group-last">
+                                                    <div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-right"><a class="ui-datepicker-next ui-corner-all" data-handler="next" data-event="click" title="Next"><span class="ui-icon ui-icon-circle-triangle-e">Next</span></a>
+                                                        <div class="ui-datepicker-title"><span class="ui-datepicker-month">MARCH</span>&nbsp;<span class="ui-datepicker-year">2017</span>
+                                                        </div>
+                                                    </div>
+                                                    <table class="ui-datepicker-calendar">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" class="ui-datepicker-week-end"><span title="Sunday">Su</span>
+                                                                </th>
+                                                                <th scope="col"><span title="Monday">Mo</span>
+                                                                </th>
+                                                                <th scope="col"><span title="Tuesday">Tu</span>
+                                                                </th>
+                                                                <th scope="col"><span title="Wednesday">We</span>
+                                                                </th>
+                                                                <th scope="col"><span title="Thursday">Th</span>
+                                                                </th>
+                                                                <th scope="col"><span title="Friday">Fr</span>
+                                                                </th>
+                                                                <th scope="col" class="ui-datepicker-week-end"><span title="Saturday">Sa</span>
+                                                                </th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">1</a><span class="calendarPrice">4,240</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">2</a><span class="calendarPrice">8,250</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">3</a><span class="calendarPrice">2,200</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">4</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">5</a><span class="calendarPrice">4,250</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">6</a><span class="calendarPrice">1,200</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">7</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">8</a><span class="calendarPrice">9,700</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">9</a>
+                                                                </td>
+                                                                <td data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">10</a><span class="calendarPrice">2,900</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">11</a><span class="calendarPrice">9,700</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">12</a><span class="calendarPrice">2,200</span>
+                                                                </td>
+                                                                <td class="ui-state-holiday ui-state-holiday-tl" title="Ramzan Eid" data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">13</a><span class="calendarPrice">6,450</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">14</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">15</a><span class="calendarPrice">3,200</span>
+                                                                </td>
+                                                                <td class=" ui-datepicker-week-end" data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">16</a>
+                                                                </td>
+                                                                <td class="ui-lowest-fares" data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">17</a><span class="calendarPrice">2,900</span>
+                                                                </td>
+                                                                <td data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">18</a><span class="calendarPrice">9,300</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">19</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">20</a><span class="calendarPrice">8,800</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">21</a><span class="calendarPrice">5,500</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">22</a><span class="calendarPrice">4,240</span>
+                                                                </td>
+                                                                <td class="ui-state-holiday" data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">23</a><span class="calendarPrice">8,250</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">24</a><span class="calendarPrice">2,200</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">25</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">26</a><span class="calendarPrice">4,250</span>
+                                                                </td>
+                                                                <td class="ui-state-holiday ui-lowest-fares" data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">27</a><span class="calendarPrice">1,200</span>
+                                                                </td>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">28</a><span class="calendarPrice">7,200</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class=" " data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">29</a><span class="calendarPrice">3,100</span>
+                                                                </td>
+                                                                <td class="" data-handler="selectDay" data-event="click" data-month="8" data-year="2017"><a class="ui-state-default" href="#">30</a>
+                                                                </td>
+                                                                <td class=" "><a class="ui-state-default" href="#">31</a><span class="calendarPrice">5,800</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="date-legends">
+                                                    <div class="today-date">Today's Date</div>
+                                                    <div class="holiday">Holiday</div>
+                                                    <div class="lowest-fare">Lowest Fares</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                            <li class="custom-field form-des-element sel-room">
+                                <div class="holder">
+                                    <label>1 Adult, Economy</label>
+                                    <i>Add Pax, Change Class</i>
+                                </div>
+                                <input type="text" />
+                                <div class="form-des-details  pickuptime-from-sec hotel-room-details sel-rm" style="display:none;">
+                                    <div class="col-xs-12 col-md-12 hotel-room-add">
+                                        <div class="row row-zero cust-row-repeat">
+
+                                            <div class="col-xs-12 col-sm-12 rht-cont-room">
+                                                <div class="room-sel">
+                                                    <div class="description">Adult <small>+ 12 Yrs</small></div>
+                                                    <div class="cust-spinner value">
+                                                        <div class="input-group spinner">
+                                                            <div class="input-group-btn">
+                                                                <button class="btn btn-default count-down" type="button"><i class="fa-custom-minus white"></i></button>
+                                                            </div>
+                                                            <input type="text" class="form-control" value="1">
+                                                            <div class="input-group-btn">
+                                                                <button class="btn btn-default count-up" type="button"><i class="fa-custom-plus white"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="room-sel">
+                                                    <div class="description"> Child <small>2 - 12 Yrs</small></div>
+                                                    <div class="cust-spinner value">
+                                                        <div class="input-group spinner">
+                                                            <div class="input-group-btn">
+                                                                <button class="btn btn-default count-down" type="button"><i class="fa-custom-minus white"></i></button>
+                                                            </div>
+                                                            <input type="text" class="form-control" value="0">
+                                                            <div class="input-group-btn">
+                                                                <button class="btn btn-default count-up" type="button"><i class="fa-custom-plus white"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="room-sel hidechild">
+                                                    <div class="description"> Infant<small>Below 2 Yrs</small></div>
+                                                    <div class="cust-spinner value">
+                                                        <div class="input-group spinner">
+                                                            <div class="input-group-btn">
+                                                                <button class="btn btn-default count-down" type="button"><i class="fa-custom-minus white"></i></button>
+                                                            </div>
+                                                            <input type="text" class="form-control" value="1">
+                                                            <div class="input-group-btn">
+                                                                <button class="btn btn-default count-up" type="button"><i class="fa-custom-plus white"></i></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-xs-12 col-sm-12">
+                                        <div class="row row-grid">
+                                            <div class="chekbox-radio-group black-theme col-sm-12">
+                                                <label class="radio-inline selected">
+                                                    <input type="radio" name="fh-type" checked>Economy</label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="fh-type">Business</label>
+                                                <label class="radio-inline">
+                                                    <input type="radio" name="fh-type">First</label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="search-btn">
+                                <a href="flights/flights-result.shtml" class="btn btn-primary btn-oneway">Search flights</a>
+                                <a href="flights/flights-result-domestic-return.shtml" class="btn btn-primary btn-return" style="display:none;">Search flights</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
