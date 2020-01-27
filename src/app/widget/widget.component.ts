@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormGroup, FormControl, Validators } from '@angular/forms';
-
+import { Router, ActivatedRoute } from '@angular/router';
+import { NgForm } from '@angular/forms';
+import { UserService } from './../shared/services/user.service';
 
 @Component({
   selector: 'app-widget',
@@ -8,27 +9,28 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   styleUrls: ['./widget.component.css']
 })
 export class WidgetComponent implements OnInit {
-  signupForm: FormGroup;
   formSubmitted;
+  element = true;
+  
+  tripType = ['One Way', 'Return', 'Multi city' , 'Flight + Hotel'];
 
-  tripType = ['One way', 'Return', 'Multi city' , 'Flight + Hotel'];
-  constructor() { }
+  constructor(private router: Router, private route: ActivatedRoute, private UserService: UserService) { }
 
   ngOnInit() {
     this.formSubmitted = false;
-    this.signupForm = new FormGroup ({
-      'fname' : new FormControl(null, Validators.required),
-      'lname' : new FormControl(null, Validators.required),
-      'subject' : new FormControl(null, Validators.required),
-      'phone' : new FormControl(null, Validators.required),
-      'email' : new FormControl(null, Validators.required),
-      'message' : new FormControl(null)
-    });
+  }
+  
+  flightWayEl(event) {
+    if(event){
+      this.element = event;
+    }
   }
 
-  onSubmit() {
-    const formdata = this.signupForm.value;
-    console.log(formdata); 
+  onSubmit(widgetForm:NgForm) {
+    const formdata = widgetForm.value;
+    this.UserService.addUser(formdata);
+    this.router.navigate(['flight-result'], {relativeTo: this.route});
+    console.log(formdata);
   }
 
 }

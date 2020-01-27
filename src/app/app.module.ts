@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { ReactiveFormsModule  } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +13,8 @@ import { BannerComponent } from './header/banner/banner.component';
 import { WidgetComponent } from './widget/widget.component';
 import { FooterComponent } from './footer/footer.component';
 import { FloatingBtnsComponent } from './header/floating-btns/floating-btns.component';
+import { FlightDetailsComponent } from './flight-details/flight-details.component';
+import { FlightsResultComponent } from './flights-result/flights-result.component';
 
 @NgModule({
   declarations: [
@@ -25,12 +27,15 @@ import { FloatingBtnsComponent } from './header/floating-btns/floating-btns.comp
     WidgetComponent,
     FooterComponent,
     FloatingBtnsComponent,
+    FlightDetailsComponent,
+    FlightsResultComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
